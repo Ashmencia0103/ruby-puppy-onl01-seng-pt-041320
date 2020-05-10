@@ -7,12 +7,15 @@ class Dog
     @sleeping = false
     @@all = self.save
   end
+  
   def bark
     puts "bark bark I'm #{self.name}}"
   end
+  
   def self.all
     @@all
   end
+  
   def self.print_all
     #iterate over @@all array
     # for each dog object, puts name
